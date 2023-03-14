@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User List</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Telegram ID</th>
+                <th>Stupid clicks</th>
+                <th>Fat clicks</th>
+                <th>Dumb clicks</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for user in users %}
+            <tr>
+                <td>{{ user.telegram_id }}</td>
+                <td>{{ user.stupid_clicks }}</td>
+                <td>{{ user.fat_clicks }}</td>
+                <td>{{ user.dumb_clicks }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
